@@ -3,10 +3,14 @@ package com.trybe.acc.java;
 import java.util.Scanner;
 
 public class AntecessorSucessor {
+  /**
+   *  Receive a integer number and show your successor and predecessor.
+  */
   public static void main(String[] args) {
     Scanner scan = new Scanner(System.in);
     System.out.println("Digite um número:");
     int numero = scan.nextInt();
+    scan.close();
     int antecessor = numero - 1;
     int sucessor = numero + 1;
     System.out.println(
